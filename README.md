@@ -9,7 +9,11 @@ Payout completed (and active) jobs automatically.
 
 ## Setup
 
-Create a .env file with the parameters specified in .env-example.
+Create a wallets.json file with the parameters specified in wallets-example.json. You can input as many nodes as you want.
+
+(optional) If you want the script to also payout active jobs, set payoutOnlyCompleted in config.json
+
+(optional) If you want to disable payouts for certain blockchains, set the "enabled" property to false in config.json
 
 Add RPCs in config.json. There are a few free rpcs that don't require making accounts :
 
