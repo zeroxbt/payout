@@ -8,7 +8,9 @@ const config = JSON.parse(fs.readFileSync("./config.json"));
   const offers = await getOffers(config.payoutOnlyCompleted);
 
   for (const blockchainName of Object.keys(offers)) {
-    if (offers[blockchainName].offers.length <= 0) continue;
+    const totalOffers = offers[blockchainName].offers.length;
+    if (totalOffers <= 0) continue;
+    console.log(`${totalOffers} offers found on ${blockchainName} blockchain`)
     const blockchain = new Blockchain({
       chainId: offers[blockchainName].chainId,
       blockchainName,
@@ -20,8 +22,9 @@ const config = JSON.parse(fs.readFileSync("./config.json"));
     });
 
     console.log("--------------------------------------------------------------------")
-    for (const offer of offers[blockchainName].offers) {
-      console.log(`${blockchainName} offer`)
+    for (const offerIndex in offers[blockchainName].offers) {
+      const offer = offers[blockchainName].offers[offerIndex];
+      console.log(`${blockchainName} offer ${offerIndex} / ${totalOffers}`)
       console.log("--------------------------------------------------------------------")
       const serializedTx = await blockchain.prepareTransaction(offer);
       const receipt = await blockchain.sendSignedTransaction(serializedTx);
@@ -32,4 +35,5 @@ const config = JSON.parse(fs.readFileSync("./config.json"));
       console.log("--------------------------------------------------------------------")
     }
   }
+  process.exit()
 })();
