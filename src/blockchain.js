@@ -5,7 +5,7 @@ const Tx = require("ethereumjs-tx").Transaction;
 const BN = require("bn.js");
 const Common = require("ethereumjs-common");
 const { txutils } = require("eth-lightwallet");
-const { normalizeHex, denormalizeHex } = require("../utils");
+const { normalizeHex, denormalizeHex } = require("./utils");
 
 class Blockchain {
   constructor(config) {

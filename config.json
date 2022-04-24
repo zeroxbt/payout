@@ -4,17 +4,17 @@
     "polygon": {
       "hubContractAddress": "0xe5FC9F71F8e378448c0BD0Fb8E1fb879654E3fbb",
       "gasStation": "https://gasstation-mainnet.matic.network/v2",
-      "rpc": "wss://polygon-mainnet.g.alchemy.com/v2/793BwMFT4YrJsDziTWGEK737R_J1qPLI"
+      "rpc": "..."
     },
     "gnosis": {
       "hubContractAddress": "0xB4Cf5D3876FA929706A87F3B4042C741dcb3d688",
       "gasStation": "https://blockscout.com/xdai/mainnet/api/v1/gas-price-oracle",
-      "rpc": "https://stake.getblock.io/mainnet/?api_key=ef827daf-4a72-496d-b39e-1857ccd11199"
+      "rpc": "..."
     },
     "ethereum": {
       "hubContractAddress": "0x89777F4D16F0a263F47EaD07cbCAb9497861aa79",
       "gasStation": "https://ethgasstation.info/api/ethgasAPI.json?",
-      "rpc": "wss://mainnet.infura.io/ws/v3/ca8df6858de848989fc193b3124f4b83"
+      "rpc": "..."
     }
   }
 }

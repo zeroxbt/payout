@@ -21,6 +21,8 @@ const config = JSON.parse(fs.readFileSync("./config.json"));
 
     console.log("--------------------------------------------------------------------")
     for (const offer of offers[blockchainName].offers) {
+      console.log(`${blockchainName} offer`)
+      console.log("--------------------------------------------------------------------")
       const serializedTx = await blockchain.prepareTransaction(offer);
       const receipt = await blockchain.sendSignedTransaction(serializedTx);
 
