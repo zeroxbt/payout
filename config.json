@@ -2,16 +2,19 @@
   "payoutOnlyCompleted": true,
   "blockchain": {
     "polygon": {
+      "enabled": true,
       "hubContractAddress": "0xe5FC9F71F8e378448c0BD0Fb8E1fb879654E3fbb",
       "gasStation": "https://gasstation-mainnet.matic.network/v2",
       "rpc": "..."
     },
     "gnosis": {
+      "enabled": true,
       "hubContractAddress": "0xB4Cf5D3876FA929706A87F3B4042C741dcb3d688",
       "gasStation": "https://blockscout.com/xdai/mainnet/api/v1/gas-price-oracle",
       "rpc": "..."
     },
     "ethereum": {
+      "enabled": true,
       "hubContractAddress": "0x89777F4D16F0a263F47EaD07cbCAb9497861aa79",
       "gasStation": "https://ethgasstation.info/api/ethgasAPI.json?",
       "rpc": "..."
