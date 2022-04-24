@@ -1,7 +1,7 @@
 const axios = require("axios");
 const config = require("../config.json")
 
-module.exports = offers = async (payoutOnlyCompleted, nodeId) => {
+module.exports = offers = async (nodeId) => {
   let offers = {};
   if(config.blockchain.ethereum.enabled) {
     offers.ethereum = { chainId: 1, offers: [] }
@@ -21,8 +21,9 @@ module.exports = offers = async (payoutOnlyCompleted, nodeId) => {
 
   for (const offer of offersInfo) {
     if (
+      !config.blockchain[offer.BlockchainName.toLowerCase()].enabled ||
       !offer.CanPayout ||
-      (payoutOnlyCompleted && offer.Status.toLowerCase() !== "completed")
+      (config.payoutOnlyCompleted && offer.Status.toLowerCase() !== "completed")
     )
       continue;
     let o = {
