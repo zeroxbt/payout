@@ -1,17 +1,17 @@
 [
     {
       "nodeId": "...",
-      "publikKey": "...",
+      "publicKey": "...",
       "privateKey": "..."
     },
     {
       "nodeId": "...",
-      "publikKey": "...",
+      "publicKey": "...",
       "privateKey": "..."
     },
     {
       "nodeId": "...",
-      "publikKey": "...",
+      "publicKey": "...",
       "privateKey": "..."
     }
   ]
