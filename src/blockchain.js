@@ -36,7 +36,7 @@ class Blockchain {
     let gasPrice;
     switch (this.chainId) {
       case 1:
-        gasPrice = response.safeLow;
+        gasPrice = response.result.SafeGasPrice;
         break;
       case 100:
         gasPrice = response.slow;
