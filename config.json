@@ -16,7 +16,7 @@
     "ethereum": {
       "enabled": false,
       "hubContractAddress": "0x89777F4D16F0a263F47EaD07cbCAb9497861aa79",
-      "gasStation": "https://ethgasstation.info/api/ethgasAPI.json?",
+      "gasStation": "https://api.etherscan.io/api?module=gastracker&action=gasoracle&apikey=B42615CQP1KPFM6CV558XVPGYKPUURDX4P",
       "rpc": "..."
     }
   }
