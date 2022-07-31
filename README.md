@@ -4,6 +4,7 @@ Payout completed (and active) jobs automatically.
 
 ## Disclaimers
 
+- ETH PAYOUTS HAVEN'T BEEN TESTED, THE PROGRAM COULD EMPTY YOUR ETH WALLET
 - The list of offers is taken from othub. If for some reason othub is down, the program won't work.
 - Othub is fairly slow at updating data. If for some reason the script throws an error, <b>wait at least 15 minutes before running it again</b>. It could happen that the script payed out a job, but othub hasn't updated, so the script will try to payout again.
 
